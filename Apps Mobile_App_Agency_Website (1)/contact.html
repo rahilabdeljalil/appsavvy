@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mobile App Solutions </title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style type="text/css">
+    html{
+      scroll-behavior: smooth;
+    }
+      
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #2dabed;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+  </style>
+</head>
+<body>
+    
+    
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+  <nav class="navbar navbar-inverse" style="height:auto;background-color:transparent;border:none;">
+
+    <div class="container">
+      <div class="navbar-header" style="background-color:transparent;">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-top:5px;border:none; ">
+          <span class="icon-bar" style="background-color: #fff;"></span>
+          <span class="icon-bar" style="background-color: #fff;"></span>
+          <span class="icon-bar" style="background-color: #fff;"></span>                        
+        </button>
+
+        <img src="images/logo.png" class="logo">
+      </div>
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right" style="background-color:transparent;padding-top:15px;">
+            <li><a href="index.html" style="color:#fff;font-family:Oxygen;font-size:17px;">Home</a></li>
+            <li><a href="about.html" style="color:#fff;font-family:Oxygen;font-size:17px;">About Us</a></li>
+            <li><a href="contact.html" style="color:#fff;font-family:Oxygen;font-size:17px;">Contact Us</a></li>
+        
+        </ul>
+      </div>
+    </div>                  
+  </nav>
+
+    <center>
+        <img src="images/contact.png" style="width:100%;margin-top:-90px;">
+    </center>
+   
+    <br><br>
+  <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="textHead" style="text-align:center;">
+                   Send Message
+                </p><br>
+<center>
+                 <form action="mail.php" method="post">
+                      <input type="text" class="ip1" name="n11" placeholder="Your Full Name" required>
+                      <input type="text" class="ip1" name="n22" placeholder="Last Name" required>
+                      <input type="text" class="ip1" name="n44" placeholder="Address" required>
+                      <input type="email" class="ip1" name="n55" placeholder="Your Email Address" required>
+                      <input type="number" class="ip1" name="n66" placeholder="Phone" required>
+                      <input type="text" class="ip1" name="n88" placeholder="Additional Info" required>
+
+                      <input type="submit" class="ipBtn1" value="Add My Listing" >
+              </form>
+</center>
+            </div>
+        </div>
+        
+    </div>
+    <br><br><br>
+    
+
+ 
+
+<footer class="foot" style="margin-top: -10px;background-color:#000000;">
+    <div class="container" id="contact">
+      <div class="row">
+        <div class="col-md-6">
+          <center><br><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26359630.09737905!2d-113.7240346513082!3d36.2460939887435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sin!4v1550210892103" class="frame"></iframe>
+          </center>
+        </div>
+        <div class="col-md-6" style="color:white;">
+          <div class="row">
+            <div class="col-md-6">
+              <br>
+                <p class="textPara" style="color:#fff;"><b>Contact Us</b></p>
+
+                <p class="textPara"  style="color:white;font-size:16px;line-height: 22px;">
+                Mobile App Solutions<br>
+                4833  XYZ Street<br>
+                XYZ City, Country<br>
+                999-999-9999<br>
+                www.emailid@gmail.com<br>
+                </p>
+              
+            </div>
+           <div class="col-md-6"><br>
+                <p  class="textPara"  style="color:#fff;"><b>QUICK LINKS</b></p>
+                <p class="textPara"  style="color:white;"><a href="index.html" style="color:white;font-size:16px;line-height: 22px;">Home</a><br>
+                <a href="about.html" style="color:white;font-size:16px;line-height: 22px;">About Us</a><br>
+                <a href="contact.html" style="color:white;font-size:16px;line-height: 22px;">Contact Us</a><br>
+                <a href="privacy.html" style="color:white;font-size:16px;line-height: 22px;">Privacy Policy </a><br>
+                <a href="tnc.html" style="color:white;font-size:16px;line-height: 22px;">Term & Condition</a><br> 
+                
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-12">
+                <p class="textPara"  style="color:#fff;"><b>OFFICE HOURS</b></p>
+                <p class="textPara"  style="color:white;font-size:16px;line-height: 22px;">We offer a variety of office hours in order to meet
+                <br> the needs of our patients.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+   
+  
+</body>
+</html>
